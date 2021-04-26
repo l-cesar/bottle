@@ -37,3 +37,49 @@ h1 {
     background-color: #00a86b;
 }
 
+#menu ul {
+    font-family: Verdana, Arial;
+	text-align: center;
+	color: #c9cacc;
+	/*margin-bottom: -1em;*/
+	padding: 10px;
+}
+
+.menu{
+	font-family: 'Menlo', 'Meslo LG', monospace; /*Arial, Helvetica, sans-serif;*/
+	text-align: center;
+	margin-bottom: -2em;
+	padding: 40px;
+}
+
+.nick-menu {/*testando navbar do h1-header*/
+	font-family: 'Menlo', 'Meslo LG', monospace; /*Arial, Helvetica, sans-serif;*/
+	text-align: center;
+	margin-bottom: 0em;
+}
+.menu-item {
+	border-bottom:0;
+	color:#FAFAFA;
+	padding:2px 0;
+	margin-left: 10px; /*10px*/
+	margin-right: 10px; /*10px*/
+	display: inline-block;
+}
+
+.menu-item.-home {
+	font-weight:700
+	}
+.menu-item.-active {
+	color:#FAFAFA;
+	border-bottom:2px solid #FAFAFA;
+}
+.menu-item:active,.menu-item:hover {/*colore a parte de trás do texto*/
+	background:0 0;
+	background-color: #c44;
+	outline:0;
+}
+.menu-item:focus {
+	color: #00a86b; /*green #00a86b*/
+	background:#FAFAFA; /*#ff0000; red*/
+}
+#menu ul li {display: inline;}
