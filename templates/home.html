@@ -17,9 +17,12 @@
         <!--Div é colocado pra destacar o texto com fundo branco no css -->
         <div>
         <h1>Headlines</h1>
-        <b>{{article.title}}</b><br />
-        <i>{{article.published}}</i><br />
-        <p>{{article.summary}}</p>
+        {% for article in articles %}
+            <b>{{article.title}}</b><br />
+            <i>{{article.published}}</i><br />
+            <p>{{article.summary}}</p>
+            <hr/>
+        {% endfor %}
         </div>
     </body>
 </html>

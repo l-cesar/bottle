@@ -18,7 +18,7 @@ RSS_FEEDS = {'bbc': 'http://feeds.bbci.co.uk/news/rss.xml',
 def get_news(publication='bbc'):
 	feed = feedparser.parse(RSS_FEEDS[publication])
 	first_article = feed['entries'][0]
-	return render_template("home.html", article=first_article)
+	return render_template("home.html", articles=feed['entries'])
 
 @app.after_request
 def add_header(response):
