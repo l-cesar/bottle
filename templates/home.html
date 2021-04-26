@@ -1,11 +1,24 @@
 <html>
 	<head>
 		<title>Headlines</title>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+		<link href="../static/assets/indexpage.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+		<header>
+				<nav class="menu">
+				<a href="/bbc/" class="menu-item -home -active">BBC</a>
+				<a href="/cnn/" class="menu-item">CNN</a>
+				<a href="/fox/" class="menu-item">FOX</a>
+				<a href="/iol/" class="menu-item">IOL</a>
+				</nav>
+		</header>
+        <div>
         <h1>Headlines</h1>
-        <b>title</b><br />
-        <i>published</i><br />
-        <p>summary</p>
+        <b>{{title}}</b><br />
+        <i>{{published}}</i><br />
+        <p>{{summary}}</p>
+        </div>
     </body>
 </html>
